@@ -2,6 +2,7 @@ apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
   name: webapi
+  namespace: desdeoswitch
   labels:
     app: webapi
 spec:

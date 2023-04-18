@@ -1,7 +1,7 @@
 FROM python:3.9
 
-RUN adduser node root && \
-    mkdir -p /src
+#RUN adduser node root && \
+RUN mkdir -p /src
 
 WORKDIR /src
 
@@ -16,8 +16,8 @@ RUN python -mvenv .venv && \
     python add_exp_users.py --username user --N 1 && \
     cat ./users_and_pass.csv
 
-RUN chmod -R 775 /src/desdeo-webapi
-RUN chown -R node:root /src/desdeo-webapi
+#RUN chmod -R 775 /src/desdeo-webapi
+#RUN chown -R node:root /src/desdeo-webapi
 
 
 ENTRYPOINT [ "python", "-m", "flask", "run", "--host=0.0.0.0" ]
