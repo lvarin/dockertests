@@ -8,4 +8,4 @@ metadata:
 spec:
   containers:
   - name: serve-cont
-    image: "docker-registry.default.svc:5000/openshift/httpd"
+    image: ""

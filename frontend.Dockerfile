@@ -1,4 +1,4 @@
-FROM nodejs
+FROM node
 
 RUN mkdir -p /src
 WORKDIR /src
@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y && \
     yarn install
 
 #WORKDIR 
-RUN sed -i 's/127.0.0.1/localhost/' ./src/App.tsx
+#RUN sed -i 's/127.0.0.1/localhost/' ./src/App.tsx
 
 ENTRYPOINT [ "yarn", "react-scripts", "--openssl-legacy-provider", "start" ]
