@@ -6,7 +6,7 @@ RUN mkdir -p /src
 WORKDIR /src
 
 # Install dependencies
-RUN git clone git clone -b experiment_switch_method --single-branch https://github.com/light-weaver/desdeo-webapi.git
+RUN git clone -b experiment_switch_method --single-branch https://github.com/light-weaver/desdeo-webapi.git
 
 WORKDIR /src/desdeo-webapi
 
