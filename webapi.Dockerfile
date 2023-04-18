@@ -10,9 +10,9 @@ RUN git clone -b experiment_switch_method --single-branch https://github.com/lig
 
 WORKDIR /src/desdeo-webapi
 
-RUN python -mvenv .venv && \
-    source .venv/bin/activate && \
-    pip install -r requirements.txt && \
+#RUN python -mvenv .venv && \
+#    source .venv/bin/activate && \
+RUN pip install -r requirements.txt && \
     python add_exp_users.py --username user --N 1 && \
     cat ./users_and_pass.csv
 
