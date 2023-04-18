@@ -13,7 +13,7 @@ WORKDIR /src/desdeo-webapi
 #RUN python -mvenv .venv && \
 #    source .venv/bin/activate && \
 RUN pip install -r requirements.txt && \
-    python add_exp_users.py --username user --N 1 && \
+    python add_exp_users.py --N 1 && \
     cat ./users_and_pass.csv
 
 #RUN chmod -R 775 /src/desdeo-webapi
