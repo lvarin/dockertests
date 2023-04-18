@@ -1,8 +1,8 @@
 FROM node
 
-RUN adduser node root
+RUN adduser node root && \
+    mkdir -p /src
 
-RUN mkdir -p /src
 WORKDIR /src
 
 # Install dependencies

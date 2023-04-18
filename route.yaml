@@ -12,3 +12,18 @@ spec:
     kind: Service
     name: serve
     weight: 100
+
+
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: desdeotests
+  namespace: desdeoswitch
+spec:
+  to:
+    kind: Service
+    name: serve
+    weight: 100
+  port:
+    targetPort: 3000
