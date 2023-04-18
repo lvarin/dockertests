@@ -10,6 +10,8 @@ RUN git clone -b experiment_switch_method --single-branch https://github.com/lig
 
 WORKDIR /src/desdeo-webapi
 
+EXPOSE 5000
+
 #RUN python -mvenv .venv && \
 #    source .venv/bin/activate && \
 RUN pip install -r requirements.txt && \
