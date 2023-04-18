@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mypod
+  name: desdeopod
   labels:
     app: desdeoapp
-    pool: desdeopod
+  namespace: desdeoswitch
 spec:
   containers:
-  - name: desdeotests
-    image: ""
+    - name: frontend
+      image: docker-registry.default.svc:5000/desdeoswitch/frontend
