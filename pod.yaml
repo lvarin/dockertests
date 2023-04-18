@@ -7,5 +7,5 @@ metadata:
     pool: desdeopod
 spec:
   containers:
-  - name: serve-cont
+  - name: desdeotests
     image: ""
