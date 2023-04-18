@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: desdeoapp
+    pool: desdeopod
+spec:
+  containers:
+  - name: serve-cont
+    image: "docker-registry.default.svc:5000/openshift/httpd"
