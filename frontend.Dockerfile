@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y && \
 WORKDIR /src/desdeo-experiments
 
 RUN yarn install
-RUN sed -i 's/127.0.0.1/localhost/' ./src/App.tsx
+RUN sed -i 's,127.0.0.1:5000,webapiroute-desdeoswitch.rahtiapp.fi/,' ./src/App.tsx
 
 RUN chmod -R 775 /src/desdeo-experiments
 RUN chown -R node:root /src/desdeo-experiments
