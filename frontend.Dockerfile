@@ -7,7 +7,7 @@ WORKDIR /src
 
 # Install dependencies
 RUN apt-get update && apt-get install -y && \
-    git clone https://github.com/giomara-larraga/desdeo-experiments.git 
+    git clone https://github.com/light-weaver/desdeo-experiments.git 
 
 WORKDIR /src/desdeo-experiments
 
