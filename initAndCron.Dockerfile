@@ -22,6 +22,6 @@ RUN pip install -r requirements.txt && \
 #RUN chown -R node:root /src/desdeo-webapi
 
 
-ENTRYPOINT [ "watch", "-n100", "ls" ]
+ENTRYPOINT [ "python" ]
 
 #Add cron job
