@@ -22,6 +22,6 @@ RUN pip install -r requirements.txt && \
 #RUN chown -R node:root /src/desdeo-webapi
 
 
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "python", "-m", "flask", "run", "--host=0.0.0.0" ]
 
 #Add cron job
