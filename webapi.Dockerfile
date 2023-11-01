@@ -6,7 +6,6 @@ RUN mkdir -p /src
 WORKDIR /src
 
 # Install dependencies
-RUN ping -c 1 github.com
 RUN curl csc.fi
 RUN git clone -b experiment_switch_method --single-branch https://github.com/giomara-larraga/desdeo-webapi.git
 
