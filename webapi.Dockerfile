@@ -1,4 +1,4 @@
-FROM openshift/python:3.8
+FROM python:3.8
 
 #RUN adduser node root && \
 RUN mkdir -p /src
