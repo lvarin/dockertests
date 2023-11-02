@@ -6,7 +6,6 @@ RUN mkdir -p /src
 WORKDIR /src
 
 # Install dependencies
-RUN pip install flask
 RUN git clone -b experiment_switch_method --single-branch https://github.com/giomara-larraga/desdeo-webapi.git
 
 WORKDIR /src/desdeo-webapi
